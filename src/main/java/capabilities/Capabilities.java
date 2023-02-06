@@ -17,7 +17,7 @@ public class Capabilities extends ClassProperties {
 
 	public static AndroidDriver<AndroidElement> baseCapabilities(String appNAme) throws IOException {
 		// TODO Access properties file to read general properties
-		// to list all installed apps : adb shell pm list packages //to get launch activity 1- adb shell 2- dumpsys package | grep -Eo "^[[:space:]]+[0-9a-f]+[[:space:]]+com.symbol.wfc.voice/[^[:space:]]+" | grep -oE "[^[:space:]]+$"
+		// to list all installed apps : adb shell pm list packages //to get launch activity 1- adb shell 2- dumpsys package | grep -Eo "^[[:space:]]+[0-9a-f]+[[:space:]]+com.akelnifood.delivery/[^[:space:]]+" | grep -oE "[^[:space:]]+$"
 		FileInputStream readProperty = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\properties\\generalProperties.properties");
 		Properties prop = new Properties();
